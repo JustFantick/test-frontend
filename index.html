@@ -143,7 +143,7 @@
             var options = { year: "numeric", month: "long", day: "numeric" }
             var userLanguage = navigator.language || navigator.userLanguage
             var date = today.toLocaleDateString(userLanguage, options)
-            document.getElementById("date").innerHTML = date
+            //document.getElementById("date").innerHTML = date
         }
     </script>
 </head>
@@ -155,7 +155,7 @@
         <header class="header">
             <div class="header__body container">
                 <div class="header__weather weather-widget"></div>
-                <h1 class="header__logo">NEWS<span>IT</span></h1>
+                <h1 class="header__logo">Lorem<span>IP</span></h1>
                 <div class="header__right-section">
                     <form action="" method="" class="search">
                         <label class="search__label">
@@ -174,7 +174,37 @@
             </div>
 
             <div class="header__nav">
-                <nav class="nav">
+                <nav class="nav container">
+                    <ul class="nav__list nav-list">
+                        <a href="" class="nav-list__item nav-list__item_home-icon icon-home"></a>
+                        <a href="" class="nav-list__item">World</a>
+                        <a href="" class="nav-list__item">Policy</a>
+                        <a href="" class="nav-list__item">Economy</a>
+                        <a href="" class="nav-list__item">Sports</a>
+                        <a href="" class="nav-list__item">Lifestyle</a>
+                        <a href="" class="nav-list__item">technology</a>
+                        <a href="" class="nav-list__item">Health</a>
+                        <a href="" class="nav-list__item nav-list__item_adver-link">sportal.gr</a>
+                    </ul>
+
+                    <div class="nav__right-section">
+                        <div class="nav__menu menu-burger"><span></span></div>
+
+                    </div>
+
+                    <div class="drop-down-menu">
+                        <ul class="drop-down-menu__list nav-list">
+                            <a href="" class="nav-list__item">car</a>
+                            <a href="" class="nav-list__item">newspapers</a>
+                            <a href="" class="nav-list__item">opinion</a>
+                            <a href="" class="nav-list__item">weather</a>
+                            <a href="" class="nav-list__item">news</a>
+                            <a href="" class="nav-list__item">Nikos blog</a>
+                            <a href="" class="nav-list__item">videos</a>
+
+                        </ul>
+
+                    </div>
 
                 </nav>
             </div>
