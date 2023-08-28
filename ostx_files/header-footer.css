@@ -7,12 +7,19 @@
 }
 
 .header__logo {
+	margin: 0;
+}
+
+.main-logo {
 	text-transform: uppercase;
 	font-family: "Open Sans", sans-serif;
 	font-size: calc(28px + (47 - 28) * ((100vw - 320px) / (1920 - 320)));
 	letter-spacing: -1px;
 	line-height: 1;
-	margin: 0;
+}
+
+.main-logo span {
+	color: red;
 }
 
 .header__weather {
@@ -21,11 +28,6 @@
 
 .header__nav {
 	border-top: 1px solid #ddd;
-}
-
-
-.header__logo span {
-	color: red;
 }
 
 .header__right-section {
@@ -355,3 +357,6 @@
 }
 
 /* Drop-down menu  ends*/
+
+
+/* Footer  */
