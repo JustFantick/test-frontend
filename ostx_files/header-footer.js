@@ -27,9 +27,26 @@ function interactMenuBurger() {
 	const menuBody = document.querySelector('.drop-down-menu');
 
 	menuIcon.addEventListener('click', () => {
-		menuIcon.classList.toggle('active');
-		menuBody.classList.toggle('active');
-	})
+		if (!menuIcon.classList.contains('active') || !menuBody.classList.contains('active')) {
+			openMenu();
+
+			menuBody.addEventListener('click', (e) => {
+				e.preventDefault();
+				closeMenu();
+			}, { once: true });
+		} else {
+			closeMenu();
+		}
+	});
+
+	function openMenu() {
+		menuIcon.classList.add('active');
+		menuBody.classList.add('active');
+	}
+	function closeMenu() {
+		menuIcon.classList.remove('active');
+		menuBody.classList.remove('active');
+	}
 }
 interactMenuBurger();
 
